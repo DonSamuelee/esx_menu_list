@@ -1,0 +1,135 @@
+.menu {
+  font-family: 'Roboto'; 
+  position   : absolute;
+  left       : 50%;
+  top        : 50%;
+  transform  : translate(-50%, -50%);
+  box-shadow : 0px 0px 50px 0px rgba(0, 0, 0, 0.808);
+  border-radius: 10px;
+  overflow-y : auto;
+  max-height : 90%; 
+}
+
+.menu button {
+  font-family: 'Roboto'; 
+  border-radius: 10px;
+  text-shadow:  1px 1px rgba(0, 0, 0, 0.801);
+  border: 3px solid #4CAF50; /* Green */
+  color: black;
+  background-color: white;
+  transition-duration: 0.4s;
+}
+.menu button:hover {
+	--sos: #2bc935;
+    color: black;
+    font-size: 12px;
+    border: 0.25em solid var(--sos);
+    border-radius: 1em;
+    width: 9em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto';
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+    margin: 1em;
+}
+
+.menu > table {
+  min-width       : 400px;
+	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.45999999999999996);
+	background: -webkit-gradient(linear, center top, center bottom, from(rgba(35, 35, 35, 0.94)), color-stop(100%, rgba(13, 46, 67, 0.9)));
+	background: -webkit-linear-gradient(top, rgba(35, 35, 35, 0.94), rgb(24, 97, 26) 100%);
+	background: linear-gradient(to bottom, rgba(35, 35, 35, 0.94), rgba(24, 97, 26) 100%);
+	border-style: solid;
+	border-color: #4CAF50;
+	border-radius: 0px 0px 7px 7px;
+	border-width: 4px 0px 0px;
+}
+
+#pos {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	 display: inline-block;
+     text-align:center;
+     font-size: 25px;
+      box-shadow:         3px 3px 5px 1px rgba(0,0,0,0.4);
+	right: 3px;
+	top: 8px;
+	z-index: 150;
+  color: white;
+	background-color: #02436b;
+	border-radius: 50%;
+}
+
+.menu > table > tbody {
+  color           : rgb(255, 255, 255);
+}
+
+.menu > table > thead {
+  text-shadow:  1px 1px rgba(0, 0, 0, 0.801);
+  text-align      : center;
+  height          : 40px;
+  line-height     : 40px;
+  color           : rgb(255, 255, 255);
+}
+
+.menu td {
+  text-align: center;
+  padding   : 8px;
+} 
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	opacity: 0.0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4CAF50;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4CAF50;
+	border-radius: 10px;
+}
+
+.fadeinout {    
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: linear 1 forwards;
+	animation-fill-mode: linear 1 forwards;
+}
+
+@-webkit-keyframes zoomIn {
+	0% {
+	opacity: 0;
+	-webkit-transform: scale3d(.3, .3, .3);
+	transform: scale3d(.3, .3, .3);
+	}
+	50% {
+	opacity: 1;
+	}
+	}
+	@keyframes zoomIn {
+	0% {
+	opacity: 0;
+	-webkit-transform: scale3d(.3, .3, .3);
+	transform: scale3d(.3, .3, .3);
+	}
+	50% {
+	opacity: 1;
+	}
+} 
